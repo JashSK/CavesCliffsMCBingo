@@ -1,0 +1,13 @@
+const bingoTiles = [
+    {
+
+    }
+];
+
+const bingoCards = [
+    [
+        [
+
+        ]
+    ]
+];
