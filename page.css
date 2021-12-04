@@ -1,10 +1,13 @@
 :root {
     --bingo-item-height: 125px;
+    --card-background: RGBa(255,255,255,0.5);
+    --card-shadow: 2px 3px 6px RGBa(0,0,0,0.2);
+    --card-title-background: linear-gradient(90deg, #2f5d94,#339761);
 }
 
 body {
     font-family: sans-serif;
-    background: url("bg.png");
+    background: url("images/bg.png");
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -18,36 +21,73 @@ body {
     border-radius: 10px;
     box-shadow: 3px 4px 3px RGBa(0,0,0,0.4);
 }
-h1 {
+.center {
     text-align: center;
-    color: #333;
+}
+p.center {
+    margin: 5px;
+    font-weight: 600;
+    color: #555;
+}
+h1 {
+    color: #474747;
     font-size: 50px;
-    margin-top: 0;
+    margin: 0
 }
 .bingo-card-mass-storage {
-    
+    margin-top: 20px;
 }
 .bingo-card {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(5,var(--bingo-item-height));
-    background: url("cardbg.png");
+    margin-top: 20px;
+    /*background: url("cardbg.png");*/
     background-size: cover;
     background-position: center center;
-    border-radius: 10px;
-    box-shadow: inset 2px 2px 5px RGBa(0,0,0,0.4), inset -2px -2px 5px RGBa(0,0,0,0.4);
+    border-radius: 5px;
+    box-shadow: var(--card-shadow);
+    background: var(--card-background);
+}
+.bingo-card-title {
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    margin: 0;
+    background: #fff;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    background: var(--card-title-background);
+}
+.shown {
+    display: block;
+}
+.bingo-tiles-container {
+    display: none;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,var(--bingo-item-height));
+}
+.bingo-tiles-container.shown {
+    display: grid;
+}
+.bingo-item.complete {
+    background: #fff;
+}
+.bingo-item.complete .bingo-title {
+    color: #6b7b6b;
 }
 .bingo-item {
     flex-grow: 1;
-    background: RGBa(255,255,255,0.8);
     padding: 1%;
     position: relative;
     transition: 0.1s ease;
+    border-radius: 5px;
 }
 .bingo-item:hover {
-    background: #fff;
+    /*background: #fff;*/
 }
-.bingo-item:hover .bingo-item-inner {
+.bingo-item:not(.complete):hover .bingo-title {
+    opacity: 0;
+}
+.bingo-item:not(.complete):hover .bingo-item-inner {
     opacity: 1;
     width: 120%;
     height: 120%;
@@ -66,9 +106,24 @@ h1 {
     color: #555;
     transform: translateY(-50%);
     width: 100%;
+    opacity: 1;
+    transition: 0.25s ease;
+}
+.bingo-free-space {
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+    color: #777;
+}
+@supports (-webkit-background-clip: text) {
+    .bingo-free-space {
+        background-image: linear-gradient(90deg, #2d46a8,#35ac4f);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
 }
 .bingo-item-inner {
-    background: #fff;
+    background: RGBa(255,255,255,0.4);
     opacity: 0;
     position: absolute;
     transition-delay: 0.1s;
@@ -76,17 +131,89 @@ h1 {
     top: 0;
     left: 0;
     border-radius: 3px;
-    padding: 10%;
+    padding: 15%;
     box-sizing: border-box;
     box-shadow: 1px 2px 2px RGBa(0,0,0,0.1);
+    cursor: default;
 }
-.bingo-mark-done {
+.bingo-description {
+    margin: 0;
+    font-size: 17px;
+    line-height: 20px;
+    color: #444;
+}
+.bingo-button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30%;
     width: 100%;
-    height: 50%;
-    background: linear-gradient(#ededed,#ebebeb,#f7f7f7);
+}
+.bingo-button {
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+    flex-grow: 1;
+    background: transparent;
+    transition: 0.05s ease;
+    cursor: pointer;
+}
+.bingo-button:hover {
+    background: #fff;
+}
+.bingo-button:active {
+    box-shadow: inset 1px 2px 10px RGBa(0,0,0,0.1);
+}
+button {
     border: none;
     font-family: sans-serif;
     font-size: 20px;
+}
+h2 {
+    margin-top: 40px;
+    font-size: 40px;
+    color: #555;
+    margin-bottom: 10px;
+}
+.achievement {
+    background: var(--card-background);
+    box-shadow: var(--card-shadow);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.achievement-title {
+    margin-top: 0;
+    font-size: 30px;
+    background-image: linear-gradient(90deg, #2f5d94,#339761);
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.achievement-description {
+    padding: 20px;
+    color: #333;
+    margin: 0;
+    line-height: 20px;
+}
+.achievement-link {
+    text-decoration: none;
+    background: #fff;
+    color: #fff;
+    background: var(--card-title-background);
+    padding: 3px 5px;
+    border-radius: 3px;
+    opacity: 0.7;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+.achievement-link:hover {
+    opacity: 1;
+}
+.achievement-image {
+    margin: 0 0 20px 20px;
 }
 footer {
     margin: 30px -40px -20px -40px;
