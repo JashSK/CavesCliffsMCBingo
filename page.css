@@ -82,6 +82,16 @@ h1 {
     transition: 0.1s ease;
     box-sizing: border-box;
 }
+.bingo-background {
+    image-rendering: pixelated;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
 .bingo-item:nth-child(21) {
     border-radius: 0 0 0 5px;
 }
@@ -118,9 +128,9 @@ h1 {
 }
 .bingo-free-space {
     font-size: 40px;
-    padding: 10px;
     text-align: center;
     color: #777;
+    line-height: var(--bingo-item-height);
 }
 @supports (background-clip: text) or (-webkit-background-clip: text)  {
     .bingo-free-space {

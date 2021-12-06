@@ -28,6 +28,7 @@ function generateTiles(card) {
         } else {
             tilesHTML += `
             <div class="bingo-item">
+                <div class="bingo-background" style="background-image: url('images/tilebg/${tile.tileBackground}')"></div>
                 <p class="bingo-title">${tile.title}</p>
                 <div class="bingo-item-inner">
                     <p class="bingo-description">${tile.shortDescription}</p>
@@ -37,7 +38,7 @@ function generateTiles(card) {
                     </div>
                 </div>
             </div>
-            `
+            `;
         }
     });
     return tilesHTML;
