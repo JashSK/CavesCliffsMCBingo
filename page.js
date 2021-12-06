@@ -12,7 +12,7 @@ function generateCards() {
     for (i=0; i<bingoCards.length; i++) {
         cardsHTML += `
         <div class="bingo-card">
-            <div class="bingo-card-title">Card ${i + 1}</div>
+            <div class="bingo-card-title">Card ${i + 1}<span class="msg">(Click to expand)</span></div>
             <div class="bingo-tiles-container">${generateTiles(bingoCards[i])}</div>
         </div>
         `
@@ -74,11 +74,11 @@ function fancyTitleFlash(tileID) {
 
 document.body.addEventListener('click',e=>{
     if (e.target.classList.contains('bingo-card-title')) {
-        document.querySelectorAll('.bingo-tiles-container.shown').forEach(el=>{
-            if (el === e.target.parentElement.lastElementChild) return;
+        document.querySelectorAll('.bingo-card.shown').forEach(el=>{
+            if (el === e.target.parentElement) return;
             el.classList.remove('shown');
         });
-        e.target.parentElement.lastElementChild.classList.toggle(`shown`);
+        e.target.parentElement.classList.toggle(`shown`);
     } else if (e.target.classList.contains('mark-done')) {
         e.target.parentElement.parentElement.parentElement.classList.add('complete');
     } else if (e.target.classList.contains('complete')) {

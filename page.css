@@ -59,6 +59,15 @@ h1 {
     /*background-size: 120% 100%;*/
     cursor: pointer;
 }
+.bingo-card.shown .msg {
+    display: none;
+}
+.msg {
+    display: block;
+    font-size: 16px;
+    color: #eee;
+    pointer-events: none;
+}
 .shown {
     display: block;
 }
@@ -68,7 +77,7 @@ h1 {
     grid-template-rows: repeat(5,var(--bingo-item-height));
     border-top: 3px solid #75c579;
 }
-.bingo-tiles-container.shown {
+.bingo-card.shown .bingo-tiles-container{
     display: grid;
 }
 .complete {
