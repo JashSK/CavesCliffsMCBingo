@@ -32,8 +32,8 @@ function generateTiles(card) {
                 <div class="bingo-item-inner">
                     <p class="bingo-description">${tile.shortDescription}</p>
                     <div class="bingo-button-container">
-                        <button class="bingo-button mark-done">✔</button>
-                        <a class="bingo-button fancy-link" href="#${convertTitleToID(tile.title)}">?</a>
+                        <button class="bingo-button mark-done" title="Mark as done">✔</button>
+                        <a class="bingo-button fancy-link" href="#${convertTitleToID(tile.title)}" title="More information"><span>?</span></a>
                     </div>
                 </div>
             </div>
