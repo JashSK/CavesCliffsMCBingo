@@ -307,6 +307,8 @@ footer {
     margin: 30px -40px -20px -40px;
     padding: 20px;
     background: #fff;
+    text-align: center;
+    color: #444;
 }
 .back-to-top {
     position: fixed;
