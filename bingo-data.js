@@ -111,10 +111,11 @@ const bingoTiles = [{
         tileBackground: 'sculk_sensor_top.png'
     },
     {
-        title: 'A Bundle of Joy',
-        shortDescription: 'Craft a bundle',
-        longDescription: 'The bundle has been given a custom crafting recipe since it is currently  unantable in survival. Craft with 6 leather or rabbit hides and 2 string.',
-        tileBackground: 'bundle.png'
+        title: 'Statue of Liberty',
+        shortDescription: 'Hold a torch in one hand and a book in the other while wearing full copper armor',
+        longDescription: 'Copper tools and armor have been added to this minigame. Craft them using normal recipes but replaced with copper ingots. Copper tools can mine the same blocks as iron tools but have half the durability. You will need to wear a complete copper armor set while holding a torch and a book to get this advancement. You can put an item into your off hand by moving it to your shield slot.',
+        imageDescription: 'coppergear.png',
+        tileBackground: 'copperhelmet.png'
     },
     {
         title: 'Deep digger',
