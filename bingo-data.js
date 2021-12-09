@@ -111,8 +111,8 @@ const bingoTiles = [{
     },
     {
         title: 'Statue of Liberty',
-        shortDescription: 'Hold a torch in one hand and a book in the other while wearing full copper armor',
-        longDescription: 'Copper tools and armor have been added to this minigame. Craft them using normal recipes but replaced with copper ingots. Copper tools can mine the same blocks as iron tools but have half the durability. You will need to wear a complete copper armor set while holding a torch and a book to get this advancement. You can put an item into your off hand by moving it to your shield slot.',
+        shortDescription: 'Hold a torch in your right hand and a book in your left while wearing full copper armor',
+        longDescription: 'Copper tools and armor have been added to this minigame. Craft them using normal recipes but replaced with copper ingots. Copper tools can mine the same blocks as iron tools but have half the durability. You will need to wear a complete copper armor set while holding a torch in your right hand and a book in your left hand to get this advancement. You can put an item into your off hand by moving it to your shield slot.',
         imageDescription: 'coppergear.png',
         tileBackground: 'copperhelmet.png'
     },
