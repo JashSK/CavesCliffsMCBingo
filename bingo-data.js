@@ -14,7 +14,7 @@ const bingoTiles = [{
     {
         title: 'The Cutest Predator',
         shortDescription: 'Catch an axolotl in a bucket',
-        longDescription: 'Catch an axolotl by right clicking it with a bucket. Axolotls can be found in the Lush cave biome. While you’re here you can make good progress on the following advancements: @11, @15, @16, @17, @22',
+        longDescription: 'Catch an axolotl by right clicking it with a bucket. Axolotls can be found in the Lush cave biome. While you’re here you can make good progress on the following advancements: @11, @15, @16, @22',
         tileBackground: 'axolotl_bucket.png'
     },
     {
@@ -62,7 +62,7 @@ const bingoTiles = [{
     {
         title: 'Frog hopper',
         shortDescription: 'Keep off the ground for 15 secs while hopping on dripleaf plants',
-        longDescription: 'You must keep from touching the ground for 15 secs by only standing on Big Dripleaf plants which can be found in the Lush cave biome. Redstone might help with this one 👀. While you’re in the Lush Caves you can make good progress on the following advancements: @3, @15, @16, @17, @22',
+        longDescription: 'You must keep from touching the ground for 15 secs by only standing on Big Dripleaf plants which can be found in the Lush cave biome. Redstone might help with this one 👀. While you’re in the Lush Caves you can make good progress on the following advancements: @3, @15, @16, @22',
         tileBackground: 'big_dripleaf_top.png'
     },
     {
@@ -86,22 +86,21 @@ const bingoTiles = [{
     {
         title: 'Cave Stew',
         shortDescription: 'Craft cave stew',
-        longDescription: 'Cave stew is a custom item added for this mini game. This recipe requires the following ingredients: glow lichen, hanging roots, azalea, flowering azalea, glowberry, big drip leaf, small drip leaf, and a moss block. Put them all together in the crafting table with a bowl. Drink it for a special potion effect 👀. While you’re in the Lush Caves you can make good progress on the following advancements: @3, @11, @16, @17, @22',
+        longDescription: 'Cave stew is a custom item added for this mini game. This recipe requires the following ingredients: glow lichen, hanging roots, azalea, flowering azalea, glowberry, big drip leaf, small drip leaf, and a moss block. Put them all together in the crafting table with a bowl. Drink it for a special potion effect 👀. While you’re in the Lush Caves you can make good progress on the following advancements: @3, @11, @16, @22',
         imageDescription: 'cavestew.png',
         tileBackground: 'suspicious_stew.png'
     },
     {
         title: 'Lush Gardener',
         shortDescription: 'Put a flowering azalea into a pot',
-        longDescription: 'Right click a flower pot with a flowering azalea plant. This plant can be found in the Lush Cave biome. While you’re here you can make good progress on the following advancements: @3, @11, @15, @17, @22',
+        longDescription: 'Right click a flower pot with a flowering azalea plant. This plant can be found in the Lush Cave biome. While you’re here you can make good progress on the following advancements: @3, @11, @15, @22',
         tileBackground: 'flowering_azalea_top.png'
     },
     {
-        title: 'Forbidden flower',
-        shortDescription: 'Craft a spore blossom',
-        longDescription: 'The spore blossom has been given a custom crafting recipe for this mini game since it is currently unantable in survival. Craft with a glow berry and 4 magenta dye in the shape of a flower. Glow berries can be found in the Lush Cave biome. While you’re here you can make good progress on the following advancements: @3, @11, @15, @16, @22',
-        imageDescription: 'sporeblossom.png',
-        tileBackground: 'spore_blossom.png'
+        title: 'Archaeologist',
+        shortDescription: 'Obtain an ancient artifact from an archaeology site',
+        longDescription: 'Archeology sites have been added for this mini game. Find an archaeology site in the center of a plains or desert village. You will find an ancient artifact within the site.',
+        tileBackground: 'totem_of_undying.png'
     },
     {
         title: 'I sense an illegal item',
@@ -144,7 +143,7 @@ const bingoTiles = [{
     {
         title: 'Haven’t seen the light in ages',
         shortDescription: 'Craft a tinted glass pane',
-        longDescription: 'Tinted glass panes are a custom item added for this mini game. Tinted glass can be crafted with 6 tinted glass blocks. You will need an amethyst shard to craft a tinted glass block. Amethyst shards can be found underground in geodes. Mine an amethyst cluster with any non silk touch pickaxe. While you’re here you might as well collect an extra shard for advancement number @10!',
+        longDescription: 'Tinted glass panes are a custom item added for this mini game (Although their functionality hasn’t been coded, sorry). Tinted glass can be crafted with 6 tinted glass blocks (You will actually just get black stained glass that’s renamed). You will need an amethyst shard to craft a tinted glass block. Amethyst shards can be found underground in geodes. Mine an amethyst cluster with any non silk touch pickaxe. While you’re here you might as well collect an extra shard for advancement number @10!',
         tileBackground: 'black_stained_glass.png'
     },
 ];
