@@ -21,6 +21,12 @@ body {
     border-radius: 10px;
     box-shadow: 3px 4px 3px RGBa(0,0,0,0.4);
 }
+.external-link {
+    color: #4344c7;
+}
+.external-link:hover {
+    color: #222f5c;
+}
 .center {
     text-align: center;
 }
