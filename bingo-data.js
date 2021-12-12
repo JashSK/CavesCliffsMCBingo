@@ -32,7 +32,7 @@ const bingoTiles = [{
     {
         title: 'Snowballer',
         shortDescription: 'Land into powder snow to break your fall',
-        longDescription: 'Perform a power snow MLG by falling into a power snow block after falling from at least 10 blocks. Powdered snow is found naturally in groves and snowy slopes. While you’re here you might as well finish advancement number @14! You may also be able to tie this in with advancement number @1!',
+        longDescription: 'Perform a power snow MLG by falling into a power snow block. Powdered snow is found naturally in groves and snowy slopes. While you’re here you might as well finish advancement number @14! You may also be able to tie this in with advancement number @1!',
         tileBackground: 'powder_snow_bucket.png'
     },
     {

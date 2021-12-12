@@ -45,13 +45,13 @@ function generateTiles(card) {
 }
 
 function generateAchievementGuide() {
-    achievementHTML = `<div id="abundleofjoy" class="achievement">
+    achievementHTML = `<div id="abundleofjoy" class="achievement box">
     <p class="achievement-title">A Bundle of Joy (FREE SPACE)</p>
     <p class="achievement-description">${fancifyDescription(`The bundle has been given a custom crafting recipe since it is currently  unobtainable in survival. You will be given a free one at the start of the game, but you can craft additional bundles with 6 leather or rabbit hides and 2 string.`)}</p>
     <img class="achievement-image" src="images/bundleofjoy.png" />
     </div>`;
     bingoTiles.forEach(tile=>{
-        achievementHTML += `<div id=${convertTitleToID(tile.title)} class="achievement">
+        achievementHTML += `<div id=${convertTitleToID(tile.title)} class="achievement box">
         <p class="achievement-title">${tile.title}</p>
         <p class="achievement-description">${fancifyDescription(tile.longDescription)}</p>
         ${tile.imageDescription ? `<img class="achievement-image" src="images/${tile.imageDescription}" />` : ''}
@@ -85,7 +85,7 @@ document.body.addEventListener('click',e=>{
         e.target.parentElement.classList.toggle(`shown`);
     } else if (e.target.classList.contains('mark-done')) {
         e.target.parentElement.parentElement.parentElement.classList.add('complete');
-    } else if (e.target.classList.contains('complete')) {
+    } else if (e.target.classList.contains('complete') && !e.target.classList.contains('bingo-free-space')) {
         e.target.classList.remove('complete');
     } else if (e.target.classList.contains('fancy-link')) {
         fancyTitleFlash(e.target.href.split('#')[1]);
