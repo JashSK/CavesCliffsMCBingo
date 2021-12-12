@@ -49,14 +49,14 @@ const bingoTiles = [{
     },
     {
         title: 'Surge Protector!',
-        shortDescription: 'Have a lightning strike a lightning rod near a village',
-        longDescription: 'Have a lightning strike a lightning rod near a village without setting the surrounding area on fire. We have made this advancement a bit easier to achieve due to the infrequency of lightning. Use the game menu book to get a lightning charge. Right click with a lightning charge on top of a lightning rod to summon a lighting bolt at its location.',
+        shortDescription: 'Have a lightning strike a lightning rod near a villager',
+        longDescription: 'Have a lightning strike a lightning rod near a villager without setting the surrounding area on fire. We have made this advancement a bit easier to achieve due to the infrequency of lightning. Use the game menu book to get a lightning charge. Right click with a lightning charge on top of a lightning rod to summon a lighting bolt at its location.',
         tileBackground: 'lightning_rod.png'
     },
     {
         title: 'Ahoy matey!',
         shortDescription: 'Look through a spyglass while on a shipwreck',
-        longDescription: 'Use the spyglass while near a shipwreck structure. Shipwrecks spawn in oceans. Keep your ears open for a special sea shanty to help you find one. The spyglass is crafted with an amethyst shard. Amethyst shards can be found underground in geodes. Mine an amethyst cluster with any non silk touch pickaxe. While you’re here you might as well collect some extra shards for advancement number @24!',
+        longDescription: 'Use the spyglass while near a shipwreck structure. Shipwrecks spawn in oceans. The spyglass is crafted with an amethyst shard. Amethyst shards can be found underground in geodes. Mine an amethyst cluster with any non silk touch pickaxe. While you’re here you might as well collect some extra shards for advancement number @24!',
         tileBackground: 'spyglass.png'
     },
     {
