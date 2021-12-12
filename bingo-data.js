@@ -86,7 +86,7 @@ const bingoTiles = [{
     {
         title: 'Cave Stew',
         shortDescription: 'Craft cave stew',
-        longDescription: 'Cave stew is a custom item added for this mini game. This recipe requires the following ingredients: glow lichen, hanging roots, azalea, flowering azalea, glowberry, big drip leaf, small drip leaf, and a moss block. Put them all together in the crafting table with a bowl. Drink it for a special potion effect 👀. While you’re in the Lush Caves you can make good progress on the following advancements: @3, @11, @16, @22',
+        longDescription: 'Cave stew is a custom item added for this mini game. This recipe requires the following ingredients: glow lichen, hanging roots, flowering azalea leaves, flowering azalea, glowberries, spore blossom, small drip leaf, and a moss block. Put them all together in the crafting table with a bowl. Drink it for a special potion effect 👀. While you’re in the Lush Caves you can make good progress on the following advancements: @3, @11, @16, @22',
         imageDescription: 'cavestew.png',
         tileBackground: 'suspicious_stew.png'
     },
