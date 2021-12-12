@@ -24,7 +24,7 @@ function generateTiles(card) {
     let tilesHTML = '';
     card.forEach(tile=>{
         if (tile === amogus) {
-            tilesHTML += `<div class="bingo-free-space complete"><div class="bingo-background" style="background-image: url('images/tilebg/bundle.png')"></div>Free Space</div>`
+            tilesHTML += `<div class="bingo-free-space complete"><div class="bingo-background" style="background-image: url('images/tilebg/bundle.png')"></div><span>Free Space</span></div>`
         } else {
             tilesHTML += `
             <div class="bingo-item">

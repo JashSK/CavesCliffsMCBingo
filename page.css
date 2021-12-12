@@ -1,5 +1,6 @@
 :root {
     --bingo-item-height: 125px;
+    --bingo-title-size: 23px;
     --card-background: RGBa(255,255,255,0.5);
     --card-shadow: 2px 3px 6px RGBa(0,0,0,0.2);
     --card-title-background: linear-gradient(90deg, #2f5d94,#339761);
@@ -53,7 +54,7 @@ h1 {
     background: var(--card-background);
 }
 .bingo-card-title {
-    font-size: 30px;
+    font-size: 40px;
     padding: 20px;
     text-align: center;
     font-weight: 100;
@@ -159,12 +160,15 @@ h1 {
     left: -10%;
     pointer-events: all;
 }
+.bingo-item:not(.complete):hover .bingo-button {
+    pointer-events: all;
+}
 .bingo-title {
     display: block;
     font-weight: bold;
     margin: 0;
     position: absolute;
-    font-size: 23px;
+    font-size: var(--bingo-title-size);
     text-align: center;
     top: 50%;
     left: 50%;
@@ -176,11 +180,17 @@ h1 {
     pointer-events: none;
 }
 .bingo-free-space {
-    font-size: 40px;
+    font-size: var(--bingo-title-size);
     text-align: center;
     color: #fff;
-    line-height: var(--bingo-item-height);
+    font-weight: bold;
     position: relative;
+}
+.bingo-free-space span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 /*@supports (background-clip: text) or (-webkit-background-clip: text)  {
     .bingo-free-space {
@@ -238,6 +248,7 @@ h1 {
     box-sizing: border-box;
     padding: 10px 0;
     position: relative;
+    pointer-events: none;
 }
 .bingo-button span {
     position: absolute;
@@ -318,6 +329,7 @@ h2 {
 }
 .achievement-image {
     margin: 0 0 20px 20px;
+    max-width: calc(100% - 40px);
 }
 footer {
     margin: 30px -40px -20px -40px;
@@ -362,4 +374,113 @@ footer {
 }
 .back-to-top:hover span {
     color: #fff;
+}
+@media (max-width: 1850px) {
+    :root {
+        --bingo-title-size: 20px;
+    }
+    .page {
+        width: 50%;
+    }
+}
+@media (max-width: 1300px) {
+    :root {
+        --bingo-title-size: 17px;
+    }
+    .bingo-title {
+        width: 100%;
+    }
+}
+@media (max-width: 1100px) {
+    .page {
+        width: 60%;
+    }
+}
+@media (max-width: 900px) {
+    .page {
+        width: 80%;
+    }
+}
+@media (max-width: 670px) {
+    :root {
+        --bingo-title-size: 15px;
+    }
+    .bingo-item-inner {
+        background: RGBa(255,255,255,0.9);
+    }
+    .bingo-description {
+        font-size: 15px;
+        line-height: 17px;
+    }
+}
+@media (max-width: 600px) {
+    .back-to-top {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        border-radius: 0;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .page {
+        margin-bottom: 70px;
+    }
+    .bingo-card-title {
+        font-size: 30px;
+    }
+}
+@media (max-width: 550px) {
+    .bingo-title {
+        display: none;
+    }
+    .bingo-background {
+        opacity: 0.7;
+    }
+    .bingo-free-space .bingo-background {
+        display: none;
+    }
+    .bingo-description {
+        font-size: 14px;
+    }
+}
+@media (max-width: 500px) {
+    .page {
+        padding: 20px;
+        width: 90%;
+    }
+    .achievement-title {
+        font-size: 25px;
+    }
+    footer {
+        margin: 20px -20px -10px -20px;
+    }
+}
+@media (max-width: 450px) {
+    .bingo-card-title {
+        font-size: 25px;
+    }
+    .bingo-card-title span {
+        font-size: 13px;
+    }
+    .bingo-description {
+        display: none;
+    }
+    .bingo-button-container {
+        outline: 1px solid red;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        box-sizing: border-box;
+    }
+    .achievement-description {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .achievement-link {
+        padding: 2px 4px;
+    }
 }
