@@ -20,7 +20,7 @@ const bingoTiles = [{
     {
         title: 'Whatever Floats Your Goat',
         shortDescription: 'Float in a boat with a goat',
-        longDescription: 'Ride in a boat with a goat as the 2nd passenger. You can do this by nudging the goat into the boat or riding the boat into the goat. Goats can be found in mountain biomes such as the snowy slopes. Be sure to save your boat for advancement number @20 and grab some milk from the goat for advancement number @7!',
+        longDescription: 'Ride in a boat with a goat as the 2nd passenger. You can do this by nudging the goat into the boat or riding the boat into the goat. Goats can be found in mountain biomes such as the snowy slopes. Be sure to grab some milk from the goat for advancement number @7!',
         tileBackground: 'oak_boat.png'
     },
     {
