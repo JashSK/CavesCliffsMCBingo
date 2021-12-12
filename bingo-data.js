@@ -119,7 +119,7 @@ const bingoTiles = [{
     {
         title: 'Deep digger',
         shortDescription: 'Obtain 5 different deepslate ore variants',
-        longDescription: 'Deepslate blocks generate below y=0. There exist 8 different deepslate ore variants. Some are harder to find than others but all varieties can be found around y=0 at various degrees. Some are more abundant at deeper y levels. Can you find 5 of them? You will need a silk touch pick to obtain the block as an ore. You can get a free one from the help manual but it seems to be poor quality. While you’re here you might be able to complete advancement number @22!',
+        longDescription: 'Deepslate blocks generate below y=0. There exist 8 different deepslate ore variants. Some are harder to find than others but all varieties can be found around y=0 at various degrees. Some are more abundant at deeper y levels. Can you find 5 of them? You will need a silk touch pick to obtain the block as an ore. You can get a free one from the help manual but it seems to be poor quality.',
         tileBackground: 'deepslate_diamond_ore.png'
     },
     {
